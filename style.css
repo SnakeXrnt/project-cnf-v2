@@ -1,0 +1,99 @@
+
+body {
+    background-image: url('https://media.discordapp.net/attachments/1341799600318713976/1341802116800577608/a26139c0-e261-452f-bfcc-ff4883728e0b.jpg?ex=67b7521a&is=67b6009a&hm=0da8d501aa21a89cdb9d02a6d1aa10d9c452df136f144cd3b625e6703e5b3baa&=&format=webp&width=679&height=905');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin: 0px;
+
+}
+
+
+.firstbox {
+    background-color: #20202079;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.runningtext {
+    
+    overflow: hidden; /* Ensures text doesn't overflow */
+    border-right: 0.15em solid orange; /* Blinking cursor */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: 0.15em; /* Adds spacing between letters */
+    animation: blink-caret 0.75s step-end infinite; /* Cursor blink animation */
+    text-align: center;
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+.textbox {
+    height: 20vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondbox {
+    background-color: #202020af;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondbox p {
+    font-size: medium;
+    text-align: center;
+    margin: 10vw;
+}
+
+.textbox4 p {
+    text-align: center;
+    margin: 10vw;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    
+}
+
+.fade-text {
+    opacity: 0;
+    transform: translateY(30px); /* Start from below */
+    animation: fadeInUp 2s ease-out forwards; /* Apply the animation */
+    display: block;
+    margin: 10px 0; /* Space between the paragraphs */
+}
+
+/* Animation to handle fading and moving up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in normal position */
+    }
+}
