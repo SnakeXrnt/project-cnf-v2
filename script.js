@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     typeWriter();
 
     // Create the audio element
-    const audio = new Audio('https://github.com/SnakeXrnt/project-cnf-v2/blob/main/blue.mp3?raw=true');  // Make sure the file path is correct
+    var audio = new Audio('https://github.com/SnakeXrnt/project-cnf-v2/blob/main/blue.mp3?raw=true');  // Make sure the file path is correct
 
     // Button click to hide the first box and show the second box
     document.querySelector('.buttonfirst').addEventListener('click', function() {
