@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     typeWriter();
 
     // Create the audio element
-    const audio = new Audio('blue.mp3');  // Make sure the file path is correct
+    const audio = new Audio('./blue.mp3');  // Make sure the file path is correct
 
     // Button click to hide the first box and show the second box
     document.querySelector('.buttonfirst').addEventListener('click', function() {
